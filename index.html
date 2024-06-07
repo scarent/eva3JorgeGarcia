@@ -31,22 +31,31 @@
            .</p>
         <img src="imgs/abrimos.jpg" alt="" width="350px">
     <div id="form">
+        <h2>Reserva tu hora en nuestra pizzeria</h2>
         <h2>Ingrese sus datos</h2>
         <label>Nombre:</label>
+        <input type="text"id="name" placeholder="Ingresa tu nombre" name="nombre">
+        <label >correo</label>
+        <input type="email" id="email" placeholder="ingresa tu correo" name="email">
+        <label>telefono</label>
+        <input type="number" id="telefono" placeholder="Ingresa tu telefono" name="telefono">
+        <label>fecha </label>
+        <input type="date" id="fecha" name="fecha">
+        <label>Ingresa tu tipo de reservacion</label>
+        <select name="tipo" id="tipo">
+            <option value="">Seleccionar</option>
+            <option value="premium">Premium</option>
+            <option value="normal">Normal</option>
+        </select>
+        <label>Seleccione numero de acompañantes</label>
+        <input type="checkbox" id="acompañante1" name="acompañante1" value="pocos">
+        <label for="acompañante1">2 personas</label>
+        <input type="checkbox" id="acompañante2" name="acompañante2" value="muchos">
+        <label for="acompañante2">3 o mas personas</label>
+        <label>Comentarios</label>
+        <textarea name="comentarios" id="comentarios"></textarea>
 
 
-        <form>
-            <h2>Formulario de contacto</h2>
-            <p>Mantente informado  con nosotros</p>
-            <label>Nombre:</label>
-            <input type="text" id="name" placeholder="ingrese su nombre">
-            <label>Correo</label>
-            <input type="email" id="email" placeholder="ingrese su email">
-            <label>telefono</label>
-            <input type="text" id="fono" placeholder="ingrese su telefono">
-            <button type="button" id="btn"> Enviar</button>
-
-        </form>
     </div>
     <div id="quiensom">
         <p>Quienes somos</p>
