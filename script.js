@@ -6,3 +6,7 @@ function cambiarmodo(){
     var element =document.body;
     element.classList.toggle("negro")
 }
+function cambiarfuente(){
+    document.body.classList.toggle("fontsize")
+
+}
