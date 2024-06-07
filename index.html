@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+    <script type="module" src="firebase.js"></script>
 </head>
 <body>
+    <button class="btn" id="btnmodoscuro" >Modo oscuro</button>
+    <button class="btn" id="btnfuente">Agrandar letras</button>
     <header id="headerr">
         <img src="imgs/melting-pizza-logo-pizzeria-restaurant-with-melting-cheese-logo-icon-template-illustration-vector.jpg" width="80px" class="centro">
         <h2>Bienvenido a pizzeria</h2>
@@ -42,7 +46,7 @@
         <label>fecha </label>
         <input type="date" id="fecha" name="fecha">
         <label>Ingresa tu tipo de reservacion</label>
-        <select name="tipo" id="tipo">
+        <select name="tiporeserva" id="tiporeserva">
             <option value="">Seleccionar</option>
             <option value="premium">Premium</option>
             <option value="normal">Normal</option>
@@ -54,6 +58,7 @@
         <label for="acompañante2">3 o mas personas</label>
         <label>Comentarios</label>
         <textarea name="comentarios" id="comentarios"></textarea>
+        <button id="btnregistro" type="button">Registrar</button>
 
 
     </div>
