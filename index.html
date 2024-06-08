@@ -55,7 +55,7 @@
             <option value="premium">Premium</option>
             <option value="normal">Normal</option>
         </select>
-        <label>Seleccione numero de acompañantes</label>
+        <label for="acompañante">Seleccione numero de acompañantes</label>
         <input type="checkbox" id="acompañante1" name="acompañante1" value="pocos">
         <label for="acompañante1">1-2 personas</label>
         <input type="checkbox" id="acompañante2" name="acompañante2" value="muchos">
@@ -63,18 +63,64 @@
         <label>Comentarios</label>
         <textarea name="comentario" id="comentario"></textarea>
         <p class="mostrar" id="pcomentario">Debes ingresar un comentario</p>
-        <label>Metodo de contacto preferido</label><br>
+        <label for="contactoo">Metodo de contacto preferido</label><br>
         <input type="radio" id="contacto" name="contacto">
         <label for="contacto">Email</label><br>
         <input type="radio" id="contacto2" name="contacto" checked>
         <label for="contacto2">Telefono</label><br>
-
-
-
         <button id="btnregistro" type="button">Registrar</button>
-
+        
 
     </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>telefono</th>
+                <th>fecha</th>
+                <th>Tipo reserva</th>
+                <th>acompañante</th>
+                <th>comentario</th>
+                <th>metodo</th>
+            </tr>
+        </thead>
+        <tBody id="tbDatos"></tBody>
+    </table>
+    <tbody id="tbdatos"></tbody>
+        <h1>actualizar reserva</h1>
+        <label>Nombre:</label>
+        <input type="text"id="UPDnombre" placeholder="Ingresa tu nombre" name="nombre">
+        <p class="mostrar" id="pnombre">Debes ingresar tu nombre</p>
+        <label >correo</label>
+        <input type="email" id="UPDemail" placeholder="ingresa tu correo" name="email">
+        <p class="mostrar" id="pemail">Debes ingresar un correo</p>
+        <label>telefono</label>
+        <input type="number" id="UPDtelefono" placeholder="Ingresa tu telefono" name="telefono">
+        <p class="mostrar" id="ptelefono">Debes ingresar 8 digitos</p>
+        <label>fecha </label>
+        <input type="date" id="UPDfecha" name="fecha">
+        <p class="mostrar" id="pfecha">Debes ingresar una fecha</p>
+        <label>Ingresa tu tipo de reservacion</label>
+        <select name="tiporeserva" id="UPDtiporeserva" required>
+            <option value="">Seleccionar</option>
+            <option value="premium">Premium</option>
+            <option value="normal">Normal</option>
+        </select>
+        <label for="UPDacompañante">Seleccione numero de acompañantes</label>
+        <input type="checkbox" id="UPDacompañante1" name="acompañante1" value="pocos">
+        <label for="acompañante1">1-2 personas</label>
+        <input type="checkbox" id="UPDacompañante2" name="acompañante2" value="muchos">
+        <label for="acompañante2">3 o mas personas</label>
+        <label>Comentarios</label>
+        <textarea name="comentario" id="UPDcomentario"></textarea>
+        <p class="mostrar" id="pcomentario">Debes ingresar un comentario</p>
+        <label for="UPDcontactoo">Metodo de contacto preferido</label><br>
+        <input type="radio" id="UPDcontacto" name="contacto">
+        <label for="contacto">Email</label><br>
+        <input type="radio" id="UPDcontacto2" name="contacto" checked>
+        <label for="contacto2">Telefono</label><br>
+        <button id="btnACTUALIZA" type="button">Actualizar</button>
     <div id="quiensom">
         <p>Quienes somos</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis enim eveniet maxime, corporis, eius consequuntur voluptate molestiae nesciunt quas saepe commodi! <br> Officiis dolores atque iste neque dignissimos dolorum <br> nesciunt cupiditate.</p>
