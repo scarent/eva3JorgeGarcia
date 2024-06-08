@@ -38,15 +38,19 @@
         <h2>Reserva tu hora en nuestra pizzeria</h2>
         <h2>Ingrese sus datos</h2>
         <label>Nombre:</label>
-        <input type="text"id="name" placeholder="Ingresa tu nombre" name="nombre">
+        <input type="text"id="nombre" placeholder="Ingresa tu nombre" name="nombre">
+        <p class="mostrar" id="pnombre">Debes ingresar tu nombre</p>
         <label >correo</label>
         <input type="email" id="email" placeholder="ingresa tu correo" name="email">
+        <p class="mostrar" id="pemail">Debes ingresar un correo</p>
         <label>telefono</label>
         <input type="number" id="telefono" placeholder="Ingresa tu telefono" name="telefono">
+        <p class="mostrar" id="ptelefono">Debes ingresar 8 digitos</p>
         <label>fecha </label>
         <input type="date" id="fecha" name="fecha">
+        <p class="mostrar" id="pfecha">Debes ingresar una fecha</p>
         <label>Ingresa tu tipo de reservacion</label>
-        <select name="tiporeserva" id="tiporeserva">
+        <select name="tiporeserva" id="tiporeserva" required>
             <option value="">Seleccionar</option>
             <option value="premium">Premium</option>
             <option value="normal">Normal</option>
@@ -57,7 +61,8 @@
         <input type="checkbox" id="acompañante2" name="acompañante2" value="muchos">
         <label for="acompañante2">3 o mas personas</label>
         <label>Comentarios</label>
-        <textarea name="comentarios" id="comentarios"></textarea>
+        <textarea name="comentario" id="comentario"></textarea>
+        <p class="mostrar" id="pcomentario">Debes ingresar un comentario</p>
         <label>Metodo de contacto preferido</label><br>
         <input type="radio" id="contacto" name="contacto">
         <label for="contacto">Email</label><br>

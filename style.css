@@ -91,3 +91,8 @@ li{
 .fontsize{
     font-size: 25px;
 }
+p.mostrar{
+    display: none;
+    color: red;
+    font-weight: bold;
+}
