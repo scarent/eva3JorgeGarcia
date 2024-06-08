@@ -106,8 +106,8 @@ const cargarDatos = ()=>{
             estructura +="<td>"+persona.fecha+"</td>";
             estructura +="<td>"+persona.tiporeserva+"</td>";
             estructura +="<td>"+persona.acompañante+"</td>";
-            estructura +="<td>"+persona.comentario+"</td>";
-            estructura +="<td>"+persona.contactoo+"</td>";
+            estructura +="<td>"+persona.comentarios+"</td>";
+            estructura +="<td>"+persona.metodo+"</td>";
             estructura += "<td><button id='UPD"+persona.id+"'>Actualizar</button></td>";
             estructura += "<td><button id='DEL"+persona.id+"'>Eliminar</button></td>";
             estructura += "</tr>"
@@ -133,9 +133,15 @@ const cargarDatos = ()=>{
                 ecomentarios.value=persona.comentario;
                 emetodo = persona.contactoo
                 document.getElementById("btnACTUALIZA").value=persona.id;
-
-
-                
+            })
+            let botonDEL = document.getElementById("DEL"+persona.id); //BOTON DELETE
+            botonDEL.addEventListener("click",()=>{
+                if(confirm("Seguro que quiere eliminar a \nNombre: "+persona.nombre+"")){
+                    eliminarPersona(persona.id).then(()=>{
+                        alert("Eliminado con exito")
+                        cargarDatos();
+                    })
+                }
             })
         })
     });   
