@@ -27,14 +27,18 @@ body{
 #form{
 
     width: 200px;
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 30px;
+    padding: 20px;
     margin: auto;
     border-width: 16px;
     text-align: center;
     background-color: orange;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+    box-sizing: border-box;
+    font-weight: bold;
+    display: block;
+    justify-content: center;
+    align-items: center;
 
 }
 #form h2{
