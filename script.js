@@ -1,7 +1,10 @@
 import { actualizarPersona, eliminarPersona, obtenerPersonas, registrarreserva } from "./promesas.js";
-window.addEventListener("load",()=>{
+window.addEventListener("load",()=>{   //solo se gatilla al cargar la pagina 
+    //asigna la funcion cambiarmodo al boton de modo oscuro
     document.getElementById("btnmodoscuro").addEventListener("click",cambiarmodo);
+    //asigna la funcion cambiarfuente al boton fuente
     document.getElementById("btnfuente").addEventListener("click",cambiarfuente);
+    //asigna la funcion validar al boton registro, para validar los campos que no se han completado
     document.getElementById("btnregistro").addEventListener("click",validar);
     document.getElementById("btnregistro").addEventListener("click",registrar);
     document.getElementById("btnACTUALIZA").addEventListener("click",actualizar);

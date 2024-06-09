@@ -11,7 +11,7 @@ export const obtenerPersonas = async()=>{
     console.log(quearySnap)
     let listado =[]
     quearySnap.forEach(doc =>{
-        listado.push({...doc.data(),id:doc.id}); //id a los objetos
+        listado.push({...doc.data(),id:doc.id}); //id a los objetos, los puntos son para ingresar de diccionario en diciconario
 
     });
     return listado;
